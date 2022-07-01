@@ -9,7 +9,7 @@ import (
 
 func main() {
 	start := time.Now() // 获取当前时间
-	wasmBytes, _ := ioutil.ReadFile("../demo/simple.wasm")
+	wasmBytes, _ := ioutil.ReadFile("demo/simple.wasm")
 
 	engine := wasmer.NewEngine()
 	store := wasmer.NewStore(engine)

@@ -8,3 +8,5 @@ require (
 )
 
 require github.com/tetratelabs/wazero v0.0.0-20220624054950-1489a9f19f39
+
+require github.com/second-state/WasmEdge-go v0.10.0 // indirect
