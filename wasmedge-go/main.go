@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"github.com/second-state/WasmEdge-go/wasmedge"
+	"time"
 )
 
 func ListInsts(name *string, mod *wasmedge.Module) {
@@ -41,7 +41,7 @@ func main() {
 
 	/// Run fib[22] directly
 	result, err := vm.ExecuteRegistered("wasm", "sum", uint32(5), uint32(37))
-	if err != nil {g
+	if err != nil {
 		fmt.Println(" !!! Error: ", err.Error())
 	}
 	// } else if result != nil {

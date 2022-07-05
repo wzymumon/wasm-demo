@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"time"
 	"github.com/second-state/WasmEdge-go/wasmedge"
+	"time"
 )
 
 func HostPrint(data interface{}, mem *wasmedge.Memory, param []interface{}) ([]interface{}, wasmedge.Result) {
