@@ -22,7 +22,7 @@ func main() {
 	check(err)
 
 	// Create a new WebAssembly Runtime.
-	r := wazero.NewRuntime()
+	r := wazero.NewRuntime(ctx)
 	defer r.Close(ctx) // This closes everything this Runtime created.
 
 	// Add a module to the runtime named "wasm/math" which exports one function "add", implemented in WebAssembly.

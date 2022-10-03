@@ -1,12 +1,9 @@
 module wasm-demo
 
-go 1.17
+go 1.18
 
 require (
-	github.com/bytecodealliance/wasmtime-go v0.37.0
+	github.com/bytecodealliance/wasmtime-go v0.39.0
+	github.com/tetratelabs/wazero v1.0.0-pre.1
 	github.com/wasmerio/wasmer-go v1.0.4
 )
-
-require github.com/tetratelabs/wazero v0.0.0-20220624054950-1489a9f19f39
-
-require github.com/second-state/WasmEdge-go v0.10.0 // indirect
