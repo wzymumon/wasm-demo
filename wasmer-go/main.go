@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 	"github.com/wasmerio/wasmer-go/wasmer"
-	"io/ioutil"
+	"os"
 	"time"
 )
 
 func main() {
 	start := time.Now() // 获取当前时间
-	wasmBytes, _ := ioutil.ReadFile("demo/simple.wasm")
+	wasmBytes, _ := os.ReadFile("demo/simple.wasm")
 
 	engine := wasmer.NewEngine()
 	store := wasmer.NewStore(engine)

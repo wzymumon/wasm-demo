@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/tetratelabs/wazero"
-	"io/ioutil"
+	"os"
 	"time"
 )
 
@@ -18,7 +18,7 @@ func main() {
 	ctx := context.Background()
 
 	// Read a WebAssembly binary containing an exported "sum" function.
-	addWasm, err := ioutil.ReadFile("demo/simple.wasm")
+	addWasm, err := os.ReadFile("demo/simple.wasm")
 	check(err)
 
 	// Create a new WebAssembly Runtime.
