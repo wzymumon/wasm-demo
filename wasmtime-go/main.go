@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/bytecodealliance/wasmtime-go"
-	"io/ioutil"
+	"os"
 	"time"
 )
 
@@ -14,7 +14,7 @@ func main() {
 	// argument to share, so create that first
 	store := wasmtime.NewStore(wasmtime.NewEngine())
 
-	wasm, err := ioutil.ReadFile("demo/simple.wasm")
+	wasm, err := os.ReadFile("demo/simple.wasm")
 	check(err)
 
 	// Once we have our binary `wasm` we can compile that into a `*Module`
