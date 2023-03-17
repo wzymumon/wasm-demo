@@ -26,7 +26,7 @@ func main() {
 	defer r.Close(ctx) // This closes everything this Runtime created.
 
 	// Add a module to the runtime named "wasm/math" which exports one function "add", implemented in WebAssembly.
-	module, err := r.InstantiateModuleFromBinary(ctx, addWasm)
+	module, err := r.Instantiate(ctx, addWasm)
 	check(err)
 
 	// exported "sum" function.
