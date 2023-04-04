@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/bytecodealliance/wasmtime-go"
+	wasmtime "github.com/bytecodealliance/wasmtime-go/v7"
 	"os"
 	"time"
 )
